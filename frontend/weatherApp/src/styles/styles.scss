@@ -1,0 +1,110 @@
+@import "bootstrap/scss/bootstrap";
+
+$primary-color: #007bff;
+$secondary-color: #f8f9fa;
+$card-bg: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+body {
+  background-color: #98c7da;
+  background-image: url("../../public/weather.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px $shadow-color;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+h2 {
+  font-weight: bold;
+  color: $primary-color;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+select.form-select {
+  border: 2px solid $primary-color;
+  transition: 0.3s ease;
+  &:hover {
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+.most-viewed button {
+  background: transparent;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+  border-radius: 8px;
+
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+.weather {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px $shadow-color;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background: rgba(0, 123, 255, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 10px $shadow-color;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .forecast-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .forecast-card {
+    width: 100%;
+  }
+}
