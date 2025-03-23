@@ -6,21 +6,31 @@ Hope you like it!
 Tech Stack:
 
 React (for the UI)
+
 SCSS (for styling)
+
 Bootstrap (for better-looking components)
+
 LocalStorage (to save most viewed cities)
+
 Fetch API (to get weather data)
 
 Features:
 
 Choose a city – Select a city from the dropdown.
+
 Get weather updates – See temperature, wind, and humidity.
+
 5-day forecast – Plan ahead with future weather predictions.
+
 Most viewed cities – The last 3 cities you checked will be saved.
+
 Bootstrap styling – Looks clean and neat!
 
 How It Works:
+
 City Selection:
+
 When you select a city, the app finds the matching city object from the list.
 
 <select
